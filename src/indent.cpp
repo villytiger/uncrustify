@@ -673,8 +673,7 @@ void indent_text(void)
                  (pc->type == CT_COMMA) ||
                  (pc->type == CT_BRACE_OPEN) ||
                  (pc->type == CT_SPAREN_CLOSE) ||
-                 ((pc->type == CT_SQUARE_OPEN) && (pc->parent_type == CT_ASSIGN))) &&
-                 (pc->parent_type != CT_CPP_LAMBDA))
+                 ((pc->type == CT_SQUARE_OPEN) && (pc->parent_type == CT_ASSIGN))))
             {
                indent_pse_pop(frm, pc);
             }
